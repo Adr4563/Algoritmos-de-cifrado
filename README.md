@@ -1,39 +1,28 @@
-<h1 align="center">Algorithm RSA 🔒 </h1>
+<h1 align="center">🔐 Desarrollo y Aplicación de Algoritmos de Cifrado en la Seguridad Informática</h1>
 
-### **Content**
-- [Introduction 📖](#introduction-)
-- [Visual Experimentation 🧪](#visual-experimentation-)
-  - [File 📄](#file-)
-  - [Image 🖼️](#image-)
-  - [Audio 🔊](#audio-)
-- [Hash Table 📊](#hash-table-)
-- [Installing Dependencies 📚](#installing-dependencies-)
+<p align="center">
+  <img src="image..jpg" alt="Portada del Proyecto" width="700">
+</p>
 
-# Introduction 📖
-RSA, named after its inventors Rivest, Shamir, and Adleman, stands as one of the pioneering achievements in modern cryptography. This public-key cryptosystem is extensively employed for secure data transmission across various digital platforms. Its significance lies in its utilization of asymmetric encryption, employing a pair of keys: a public key for encryption and a private key for decryption.
+### 📝 Descripción
+Desarrollo de un sistema de seguridad criptográfica diseñado para proteger activos digitales visuales. El proyecto implementa un enfoque híbrido que transforma imágenes legibles en **ruido aleatorio**, garantizando que la data sea irrecuperable sin la llave privada correspondiente.
 
-![image](https://github.com/Adr4563/Cryptography_RSA-AES/assets/135796378/210c9c09-f4ae-4d31-a189-fdb675ace31c)
+### ⚙️ Resumen Técnico
+El sistema opera mediante tres capas de seguridad complementarias:
 
-Key features of RSA:
-- **Public Key**: Used for encrypting data, widely distributed and known.
-- **Private Key**: Kept secret and used for decrypting data.
+* ✅ **RSA (Asimétrico):** Garantiza el intercambio seguro de las llaves utilizadas para el cifrado, protegiendo el canal de comunicación.
+* 🧱 **Permutación de Bloques:** Divide la imagen en cuadrantes y redistribuye los píxeles aleatoriamente para **romper la correlación espacial** (destruye formas y contornos).
+* ⚡ **Cifrado XOR:** Aplica una operación bit a bit sobre cada píxel para ofuscar los valores RGB, eliminando la información de color y aplanando el histograma.
 
-The security foundation of RSA hinges on the formidable challenge of factoring large prime numbers, which underpins the generation of its keys. This approach ensures that intercepted encrypted messages remain indecipherable to unauthorized entities.
-# Visual Experimentation 🧪
+### 📉 Resultado y Validación
+El proceso elimina eficazmente tanto la estructura visual (posición) como los patrones de color. Las métricas de análisis confirman una alta resistencia a ataques estadísticos, resultando en una imagen final indistinguible del ruido estático.
 
-### File 📄
+<p align="center">
+  <em>Comparativa: Imagen Original vs. Cifrado Final (Ruido)</em>
+  <img src="variantes.png" alt="Comparativa de Variantes" width="700">
+  <br>
+</p>
 
-![Untitled ‑ Made with FlexClip (1)](https://github.com/Adr4563/Algorithm-RSA/assets/135796378/3e5f95d1-379c-488b-8e93-2ceb2a78795c)
-
-### Image 🖼️
-![Untitled ‑ Made with FlexClip](https://github.com/Adr4563/Criptografy_RSA-AES/assets/135796378/419c1f35-fdad-49b3-917e-c7f21351b7b1)
-
-### Audio 🔊
-
-# Hash Table 📊
-
-# Installing dependencies 📚
-
-```
-pip install -r requirements.txt
-```
+---
+### 🛠️ Tech Stack
+• **Lenguaje:** Python • **Cifrado:** Cryptography & Random • **Análisis:** Microsoft Power BI • **Viz:** Matplotlib
